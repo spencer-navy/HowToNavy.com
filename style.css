@@ -6,7 +6,9 @@
 	margin: 0;
 }
 body {
-	background-color: #16657c;
+	height: 100%;
+	background-color: white;
+	width: 100%;
 }
 
 .links-title {text-align: center;}
@@ -16,7 +18,7 @@ body {
 
 /* NAVBAR */
 .wrapper-total{
-	background-color: #aeb5ad;
+	background-color: #95B4C0;
 	border-bottom: 3px solid #16657c;
 	width: 100%;
 	height: 60px;
@@ -25,19 +27,11 @@ body {
 }
 
 .wrapper-home{
-	background-color: #aeb5ad;
-	border-bottom: 3px solid #16657c;
+	background-color: #95B4C0;
+	border-bottom: 3px solid white;
 	width: 100%;
 	height: 60px;
 	position: static;
-	box-sizing: border-box;
-}
-
-.wrapper-home ul li:first-child {
-	display: flex;
-	justify-content: left;
-	color: #16657c;
-	margin-right: auto;
 }
 .wrapper-home ul {
 	list-style: none;
@@ -45,19 +39,25 @@ body {
 	justify-content: right;
 }
 .wrapper-home ul li {
-	list-style: none;
 	padding: 10px;
 	margin-top: 10px;
 }
-.wrapper-home ul li a{
+.wrapper-home ul li a {
 	text-decoration: none;
 	color: #16657c;
 	font-weight: 600;
 	font-size: 20px;
-
-	/*spacing between the words*/
+}
+.wrapper-home ul li:first-child{
+	justify-content: left;
+	margin-right: auto;
 }
 .wrapper-home ul li a:hover {color: white;}
+
+
+.logo{
+	display: none;
+}
 
 .menu{
 	display: none;
@@ -74,19 +74,7 @@ body {
 	align-items: center;
 	text-align: center;
 }
-.splash-text{
-	position: absolute;
-	color: #16657c;
-	font-size: 60px;
-	font-weight: 700;
-	text-align: center;
-	width: 100%;
-	display: block;
-	justify-content: center;
-	align-items: center;
-	margin-top: 250px;
-}
-.splash2{
+.splash-img{
 	width: 100%;
 	height: auto;
 	display: block;
@@ -94,12 +82,15 @@ body {
 	margin-right: auto;
 	justify-content: center;
 	align-items: center;
+	opacity: 0.5;
+	position: absolute;
 }
+
 
 /*Company Tagline*/
 .tagline{
-	background-color: #aeb5ad;
-	border: 3px solid #cccccc;
+	background-color: #95B4C0;
+	border: 3px solid white;
 	box-sizing: border-box;
 	text-align: center;
 	display: flex;
@@ -108,20 +99,25 @@ body {
 	padding: 10px;
 	margin: 20px auto;
 	color: #16657c;
+	position: relative;
+	opacity: 0.7;
 }
+
 
 /* Quick Links Home page */
 .QuickLinks{
-	background-color: #aeb5ad;
-	border: 3px solid #cccccc;
+	background-color: #95B4C0;
+	border: 3px solid white;
 	box-sizing: border-box;
 	text-align: center;
 	display: block;
 	justify-content: center;
-	max-width: 400px;
+	max-width: 800px;
 	max-height: 600px;
 	padding: 10px;
 	margin: 20px auto;
+	opacity: 0.7;
+	position: relative;
 }
 .QuickLinks-Title{
 	color: #16657c;
@@ -136,8 +132,8 @@ body {
 	margin: 15px;
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
-	flex-wrap: nowrap;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .Quicklinks li{
 	margin-bottom: 20px;
@@ -151,6 +147,7 @@ body {
 	line-height: 50px;
 	border: 3px solid white;
 	border-radius: 35px;
+	margin: 10px;
 }
 .QuickLinks a:hover {
 	color: black;
@@ -161,16 +158,18 @@ body {
 /*What We Do Block*/
 .info{
 	box-sizing: border-box;
-	background-color: #aeb5ad;
-	border: 3px solid #cccccc;
+	background-color: #95B4C0;
+	border: 3px solid white;
 	box-sizing: border-box;
 	text-align: center;
 	display: block;
 	justify-content: center;
-	max-width: 400px;
+	max-width: 800px;
 	max-height: 600px;
 	padding: 10px;
 	margin: 20px auto 20px auto;
+	position: relative;
+	opacity: 0.7;
 }
 .info-title{
 	color: #16657c;
@@ -357,12 +356,12 @@ p{
 .footer {
 	height: 30px;
 	width: 100%;
-	position: relative;
-	left: 0;
-	bottom: 0;
-	background-color: #aeb5ad;
-	border-top: 2px solid;
-	border-color: #cccccc;
+	background-color: #95B4C0;
+	border-top: 2px solid #cccccc;
+	margin-top: 400px;
+	position: absolute;
+}
+.copyright{
 	color: #6c7a81;
 	text-align: center;
 }
@@ -371,10 +370,43 @@ p{
 
 
 
+
+
 /* WHEN BROWSER WIDTH IS 800PX OR LESS */
 @media screen and (max-width: 800px) {
+	.splash{
+		display: none;
+	}
+	.tagline{
+		position: static;
+		opacity: 1.0;
+		border: 3px solid #16657c;
+	}
+	.QuickLinks{
+		position: static;
+		max-width: 400px;
+		opacity: 1.0;
+		border: 3px solid #16657c;
+	}
+	.info{
+		max-width: 400px;
+		opacity: 1.0;
+		border: 3px solid #16657c;
+	}
 	.wrapper-home {
 		display: none;
+	}
+
+	.logo{
+		padding: 10px;
+		text-decoration: none;
+		color: #16657c;
+		font-weight: 600;
+		font-size: 30px;
+		display: flex;
+		justify-content: left;
+		margin-right: auto;
+		width: 10%;
 	}
 
 	.menuIcon {
@@ -391,7 +423,7 @@ p{
 
 	.bar {
 		width: 70%;
-		height: 4px;
+		height: 3px;
 		background-color: white;
 	}
 
@@ -404,8 +436,9 @@ p{
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
-		background-color: #aeb5ad;
-		border: 3px solid white;
+		background-color: #95B4C0;
+		border-left: 3px solid #16657c;
+		border-bottom: 3px solid #16657c;
 		min-height: 150px;
 		transition: 0.125s;
 	}
@@ -415,23 +448,12 @@ p{
 		font-size: 20px;
 		text-decoration: none;
 		padding: 5px;
-		font-weight: 300;
+		font-weight: 400;
 	}
 	a:hover{
 		color: white;
 	}
 
-	.splash-text{
-		position: absolute;
-		color: white;
-		font-size: 60px;
-		text-align: center;
-		width: 100%;
-		display: block;
-		justify-content: center;
-		align-items: center;
-		margin-top: 250px;
-	}
 	.distant2{
 		width: 100%;
 		height: 500px;
@@ -452,6 +474,15 @@ p{
 		justify-content: center;
 		align-items: center;
 		margin-top: 180px;
+	}
+
+	/* Footer */
+	.footer {
+		height: 30px;
+		width: 100%;
+		background-color: #95B4C0;
+		border-top: 2px solid #cccccc;
+		position: relative;
 	}
 }
 
