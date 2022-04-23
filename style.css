@@ -71,7 +71,7 @@ body {
 	max-width: 400px;
 	padding: 10px;
 	margin: 20px auto;
-	color: #16657c;
+	color: black;
 	position: static;
 }
 
@@ -147,7 +147,7 @@ body {
 	position: static;
 }
 .info-title{
-	color: #16657c;
+	color: black;
 	text-align: center;
 	margin-bottom: 10px;
 	font-size: 30px;
@@ -234,7 +234,7 @@ p{
 	max-height: 50px;
 	padding: 10px;
 	margin: 20px auto;
-	color: #16657c;
+	color: black;
 }
 .about-body{
 	box-sizing: border-box;
@@ -269,7 +269,7 @@ p{
 	max-width: 400px;
 	padding: 10px;
 	margin: 20px auto;
-	color: #16657c;
+	color: black;
 }
 .contact-body{
 	background-color: #95B4C0;
@@ -385,6 +385,10 @@ p{
 /* WHEN BROWSER WIDTH IS 800PX OR LESS */
 @media screen and (max-width: 800px) {
 	.splash{
+		display: none;
+	}
+
+	.distant{
 		display: none;
 	}
 	.tagline{
