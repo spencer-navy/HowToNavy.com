@@ -1,3 +1,4 @@
+/*MY CODE*/
 
 /* star(*) applies to everything in the webpage*/
 
@@ -71,7 +72,7 @@ body {
 	padding: 10px;
 	margin: 20px auto;
 	color: #16657c;
-	position: relative;
+	position: static;
 }
 
 /* Home Page Splash*/
@@ -110,7 +111,7 @@ body {
 	max-height: 500px;
 	padding: 5px;
 	margin: auto auto 30px auto;
-	position: relative;
+	position: static;
 }
 
 .QuickLinks a {
@@ -143,13 +144,14 @@ body {
 	max-height: 600px;
 	padding: 10px;
 	margin: 20px auto 20px auto;
-	position: relative;
+	position: static;
 }
 .info-title{
 	color: #16657c;
 	text-align: center;
 	margin-bottom: 10px;
 	font-size: 30px;
+	position: static;
 }
 p{
 	color: black;
@@ -172,13 +174,14 @@ p{
 	max-height: 200px;
 	padding: 10px;
 	margin: 20px auto;
-	position: relative;
+	position: static;
 }
 .Links-Title{
 	color: black;
 	text-align: center;
 	margin-bottom: 10px;
 	font-size: 30px;
+	position: static;
 }
 
 
@@ -348,6 +351,7 @@ p{
 	color: 16657c;
 	font-size: 30px;
 	margin-bottom: 10px;
+	position: static;
 }
 
 
