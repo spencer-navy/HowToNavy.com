@@ -1,4 +1,3 @@
-/*MY CODE*/
 
 /* star(*) applies to everything in the webpage*/
 
@@ -110,7 +109,7 @@ body {
 	max-width: 1200px;
 	max-height: 500px;
 	padding: 5px;
-	margin: auto;
+	margin: auto auto 30px auto;
 	position: relative;
 }
 
@@ -170,7 +169,7 @@ p{
 	display: block;
 	justify-content: center;
 	width: 400px;
-	max-height: 100px;
+	max-height: 200px;
 	padding: 10px;
 	margin: 20px auto;
 	position: relative;
@@ -277,19 +276,21 @@ p{
 	display: block;
 	justify-content: center;
 	max-width: 700px;
-	padding: 10px;
+	padding: 20px;
 	margin: 20px auto;
 	color: #16657c;
 }
 .contact-h2{
+	margin-bottom: 20px;
 }
 .contact-p a{
 	text-decoration: none;
 	color: black;
 	border: 3px solid white;
 	border-radius: 35%;
-	padding: 5px;
+	padding: 8px;
 	font-size: 20px;
+	margin: 10px;
 }
 .contact-p a:hover{
 	background-color: white;
@@ -325,17 +326,18 @@ p{
 	background-color: #95B4C0;
 	box-sizing: border-box;
 	width: 400px;
-	height: 500px;
+	max-height: 800px;
 }
 .links-section a{
 	color: black;
 	font-size: 20px;
 	text-decoration: none;
 	line-height: 15px;
-	padding: 5px;
+	padding: 10px;
 	border: 3px solid white;
 	border-radius: 15px;
 	margin: 5px auto;
+	line-height: 20px;
 }
 .links-section a:hover{
 	color: black;
@@ -359,13 +361,21 @@ p{
 	position: absolute;
 }
 
+/* yes I am cheating but idk how to fix it*/
 .empty{
-	min-height: 450px;
+	min-height: 430px;
+	max-height: 800px;
+}
+
+.empty-forms{
+	height: 400px;
 }
 .copyright{
 	color: #6c7a81;
 	text-align: center;
 }
+
+
 
 
 /* WHEN BROWSER WIDTH IS 800PX OR LESS */
