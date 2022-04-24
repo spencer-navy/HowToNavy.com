@@ -7,59 +7,87 @@
 }
 body {
 	height: 100%;
-	background-color: white;
 	width: 100%;
-	background-image: url("splash.jpg");
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover;
+	background-color: white;
+	/*background-image: url("splash.jpg");
+	background-position: center; /* Center the image
+	background-repeat: no-repeat; /* Do not repeat the image
+	background-size: cover; */
 }
-
-
 
 
 /* NAVBAR */
-.wrapper-total{
-	background-color: #95B4C0;
-	border-bottom: 3px solid #16657c;
-	width: 100%;
-	height: 60px;
-	position: static;
-	box-sizing: border-box;
-}
-.wrapper-home{
+.wrapper-total{								/*NAVBAR AS A WHOLE*/
 	background-color: #95B4C0;
 	border-bottom: 3px solid #16657c;
 	width: 100%;
 	height: 60px;
 	position: static;
 }
-.wrapper-home ul {
-	list-style: none;
+
+.wrapper-home{								/*NAVBAR IN LARGE VIEW*/
+	background-color: #95B4C0;
+	border-bottom: 3px solid #16657c;
+	width: 100%;
+	height: 60px;
+	position: static;
+}
+.wrapper-home ul {							/*NAVBAR LIST OF ITEMS*/
 	display: flex;
 	justify-content: right;
+	margin-right: 10px;
 }
-.wrapper-home ul li {
-	padding: 10px;
-	margin-top: 10px;
+.wrapper-home ul li {						/*NAVBAR TABS AS A WHOLE*/
+	padding: 0px;
+	margin-top: 20px;
+	position: relative;
+	list-style: none;
 }
-.wrapper-home ul li a {
+.wrapper-home ul li a {						/*NAVNAR INDIVIDUAL TABS*/
 	text-decoration: none;
 	color: #16657c;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 25px;
+	padding: 10px;
 }
-.wrapper-home ul li:first-child{
+.wrapper-home ul li a:hover {				/*NAVNAR INDIVIDUAL TABS WHEN HOVER*/
+	color: white;
+}
+.wrapper-home ul li ul {					/*NAVBAR DROP DOWN AS A WHOLE*/
+	display: none;
+	position: absolute;
+	background-color: #95B4C0;
+	border-radius: 0px 0px 10px 10px;
+	border-left: 3px solid #16657c;
+	border-bottom: 3px solid #16657c;
+	border-right: 3px solid #16657c;
+}
+.wrapper-home ul li:hover ul{				/*NAVBAR DROPDOWN WHEN HOVER*/
+	display: block;
+}
+.wrapper-home ul li ul li {
+	width: 180px;
+}
+.wrapper-home ul li ul li a {				/*NAVBAR DROPDOWN INDIVIDUAL TABS*/
+	text-decoration: none;
+	color: #16657c;
+	font-size: 20px;
+	padding: 8px 14px;
+}
+.wrapper-home ul li ul li a:hover{			/*NAVBAR DROPDOWN INDIV TABS WHEN HOVER*/
+	color: white;
+}
+.wrapper-home ul li:first-child{ 			/*navbar logo justify left */
 	justify-content: left;
 	margin-right: auto;
 }
-.wrapper-home ul li a:hover {
-	color: white;
-}
-.logo{
+
+
+
+.logo{										/*LOGO WHEN CREATED*/
 	display: none;
 }
-.menu{
+.menu{										/*LIST OF NAVBAR TABS WHEN SMALL*/
 	display: none;
 }
 
@@ -74,12 +102,12 @@ body {
 	justify-content: center;
 	max-width: 400px;
 	padding: 10px;
-	margin: 20px auto;
+	margin: 30px auto;
 	color: black;
 	position: static;
 }
 
-/* Home Page Splash*/
+/* Home Page Splash
 .splash {
 	width: 100%;
 	margin-top: 0;
@@ -88,6 +116,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	position: static;
 }
 .splash-img{
 	width: 100%;
@@ -98,8 +127,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	opacity: 0.3;
-	position: absolute;
-}
+	position: static;
+}*/
 
 
 
@@ -114,7 +143,7 @@ body {
 	max-width: 1200px;
 	max-height: 500px;
 	padding: 5px;
-	margin: auto auto 30px auto;
+	margin:  30px auto;
 	position: static;
 }
 
@@ -137,17 +166,16 @@ body {
 
 /*What We Do Block*/
 .info{
-	box-sizing: border-box;
 	background-color: #95B4C0;
 	border: 3px solid #16657c;
 	box-sizing: border-box;
 	text-align: center;
 	display: block;
 	justify-content: center;
-	max-width: 800px;
-	max-height: 600px;
+	max-width: 700px;
+	max-height: 200px;
 	padding: 10px;
-	margin: 20px auto 20px auto;
+	margin: 20px auto;
 	position: static;
 }
 .info-title{
@@ -272,7 +300,7 @@ p{
 	justify-content: center;
 	max-width: 400px;
 	padding: 10px;
-	margin: 20px auto;
+	margin: 20px auto 20px auto;
 	color: black;
 }
 .contact-body{
@@ -284,11 +312,11 @@ p{
 	justify-content: center;
 	max-width: 700px;
 	padding: 20px;
-	margin: 20px auto;
+	margin: 20px auto 20px auto;
 	color: #16657c;
 }
 .contact-h2{
-	margin-bottom: 20px;
+	margin: 20px auto 20px auto;
 }
 .contact-p a{
 	text-decoration: none;
@@ -321,7 +349,7 @@ p{
 	max-width: 90%;
 	max-height: 100%;
 	padding: 10px;
-	margin: auto;
+	margin: 30px auto;
 }
 
 .links-section{
@@ -386,12 +414,147 @@ p{
 
 
 
+
+
+/* EDUCATION AND COLLEGE RESOURCES PAGE */
+	.EducationContainer{
+		background-color: #95B4C0;
+		margin: 30px;
+		border: 3px solid #16657c;
+	}
+	/* EDUCATION QUICK LINKS SECTION*/
+	.QuickLinks-Education{
+		background-color: #95B4C0;
+		border: 3px solid #16657c;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 1200px;
+		max-height: 500px;
+		padding: 5px;
+		margin:  30px auto;
+		position: static;
+	}
+
+	.QuickLinks-Education a {
+		text-decoration: none;
+		color: black;
+		font-weight: 500;
+		font-size: 20px;
+		padding: 8px;
+		line-height: 30px;
+		border: 3px solid white;
+		border-radius: 35px;
+		margin: 5px;
+		text-align: center;
+	}
+	.QuickLinks-Education a:hover {
+		color: black;
+		background-color: white;
+	}
+
+
+
+/* MOBILIZATION PAGE */
+.MobilizationContainer{
+	background-color: #95B4C0;
+	margin: 30px;
+	border: 3px solid #16657c;
+
+}
+	.MobBody{
+		line-height: 2;
+		margin: 30px;
+	}
+	/* Mobilization QUICK LINKS SECTION*/
+	.QuickLinks-Mob{
+		background-color: #95B4C0;
+		border: 3px solid #16657c;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 1200px;
+		max-height: 500px;
+		padding: 5px;
+		margin:  30px auto;
+		position: static;
+	}
+
+	.QuickLinks-Mob a {
+		text-decoration: none;
+		color: black;
+		font-weight: 500;
+		font-size: 20px;
+		padding: 8px;
+		line-height: 30px;
+		border: 3px solid white;
+		border-radius: 35px;
+		margin: 5px;
+		text-align: center;
+	}
+	.QuickLinks-Mob a:hover {
+		color: black;
+		background-color: white;
+	}
+
+
+
+
+/* FORMS PAGE */
+/* Mobilization QUICK LINKS SECTION*/
+.QuickLinks-Forms{
+	background-color: #95B4C0;
+	border: 3px solid #16657c;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	max-width: 700px;
+	max-height: 500px;
+	padding: 5px;
+	margin:  30px auto;
+	position: static;
+}
+
+.QuickLinks-Forms a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	font-size: 30px;
+	padding: 8px;
+	line-height: 30px;
+	border: 3px solid white;
+	border-radius: 35px;
+	margin: 5px;
+	text-align: center;
+}
+.QuickLinks-Forms a:hover {
+	color: black;
+	background-color: white;
+}
+
+/* WHEN BROWSER WIDTH IS 800PX OR LESS */
+@media screen and (max-width: 900px) {
+	.wrapper-home ul li a {						/*NAVNAR INDIVIDUAL TABS*/
+		text-decoration: none;
+		color: #16657c;
+		font-weight: 600;
+		font-size: 15px;
+		padding: 5px;
+	}
+}
 /* WHEN BROWSER WIDTH IS 800PX OR LESS */
 @media screen and (max-width: 800px) {
 	.splash{
 		display: none;
 	}
-
+	body {
+		height: 100%;
+		background-color: white;
+		background-image: none;
+	}
 	.distant{
 		display: none;
 	}
@@ -405,11 +568,13 @@ p{
 		max-width: 400px;
 		opacity: 1.0;
 		border: 3px solid #16657c;
+		margin: auto;
 	}
 	.info{
 		max-width: 400px;
 		opacity: 1.0;
 		border: 3px solid #16657c;
+		margin: 30px auto;
 	}
 	.wrapper-home {
 		display: none;
@@ -462,14 +627,14 @@ p{
 	}
 
 	a {
-		color: #16657c;
+		color: white;
 		font-size: 20px;
 		text-decoration: none;
 		padding: 5px;
 		font-weight: 400;
 	}
 	a:hover{
-		color: white;
+		color: black;
 	}
 
 	.distant2{
