@@ -9,12 +9,7 @@ body {
 	height: 100%;
 	width: 100%;
 	background-color: white;
-	/*background-image: url("splash.jpg");
-	background-position: center; /* Center the image
-	background-repeat: no-repeat; /* Do not repeat the image
-	background-size: cover; */
 }
-
 
 /* NAVBAR */
 .wrapper-total{								/*NAVBAR AS A WHOLE*/
@@ -82,10 +77,10 @@ body {
 	margin-right: auto;
 }
 
-
-
 .logo{										/*LOGO WHEN CREATED*/
-	display: none;
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
 }
 .menu{										/*LIST OF NAVBAR TABS WHEN SMALL*/
 	display: none;
@@ -100,36 +95,15 @@ body {
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	max-width: 400px;
+	max-width: 70%;
 	padding: 10px;
-	margin: 30px auto;
+	margin: 50px auto;
 	color: black;
 	position: static;
 }
-
-/* Home Page Splash
-.splash {
-	width: 100%;
-	margin-top: 0;
-	height: 100%;
-	display: block;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	position: static;
+.tagline h1{
+	font-size: 45px;
 }
-.splash-img{
-	width: 100%;
-	height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	justify-content: center;
-	align-items: center;
-	opacity: 0.3;
-	position: static;
-}*/
-
 
 
 /* HOME PAGE QUICK LINKS SECTION*/
@@ -140,20 +114,18 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
-	max-width: 1200px;
-	max-height: 500px;
+	max-width: 70%;
 	padding: 5px;
-	margin:  30px auto;
+	margin: 50px auto;
 	position: static;
 }
-
 .QuickLinks a {
 	text-decoration: none;
 	color: black;
 	font-weight: 500;
 	font-size: 25px;
 	padding: 10px;
-	line-height: 50px;
+	line-height: 1.5;
 	border: 3px solid white;
 	border-radius: 35px;
 	margin: 5px;
@@ -164,6 +136,7 @@ body {
 }
 
 
+
 /*What We Do Block*/
 .info{
 	background-color: #95B4C0;
@@ -172,10 +145,9 @@ body {
 	text-align: center;
 	display: block;
 	justify-content: center;
-	max-width: 700px;
-	max-height: 200px;
 	padding: 10px;
-	margin: 20px auto;
+	margin: 50px auto;
+	max-width: 70%;
 	position: static;
 }
 .info-title{
@@ -185,10 +157,64 @@ body {
 	font-size: 30px;
 	position: static;
 }
-p{
+.info p{
+	color: black;
+	font-size: 30px;
+}
+
+/* 		````````MOST COMMON LINKS ON HOME PAGE````````````			*/
+#Most-Common-Container{
+	background-color: #DDF2F9;
+	border: 3px solid #16657c;
+	box-sizing: border-box;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	max-width: 70%;
+	padding: 10px;
+	margin: 50px auto;
+}
+.most-common-section{
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+	padding: 5px;
+	border: 3px solid #16657c;
+	background-color: #95B4C0;
+	box-sizing: border-box;
+	width: 400px;
+	max-height: 800px;
+}
+.most-common-section a{
 	color: black;
 	font-size: 20px;
+	text-decoration: none;
+	line-height: 15px;
+	padding: 10px;
+	border: 3px solid white;
+	border-radius: 15px;
+	margin: 5px auto;
+	line-height: 20px;
 }
+.most-common-section a:hover{
+	color: black;
+	background-color: white;
+}
+
+.subheader-most-common{
+	color: 16657c;
+	font-size: 30px;
+	margin-bottom: 10px;
+	position: static;
+}
+
+
+
+
+
+
 
 
 
@@ -351,7 +377,6 @@ p{
 	padding: 10px;
 	margin: 30px auto;
 }
-
 .links-section{
 	display: flex;
 	flex-direction: column;
@@ -378,37 +403,11 @@ p{
 	color: black;
 	background-color: white;
 }
-
 .links-title{
 	color: 16657c;
 	font-size: 30px;
 	margin-bottom: 10px;
 	position: static;
-}
-
-
-/* Footer */
-.footer {
-	height: 30px;
-	width: 100%;
-	background-color: #95B4C0;
-	border-top: 2px solid #cccccc;
-	margin-top: 400px;
-	position: absolute;
-}
-
-/* yes I am cheating but idk how to fix it*/
-.empty{
-	min-height: 430px;
-	max-height: 800px;
-}
-
-.empty-forms{
-	height: 400px;
-}
-.copyright{
-	color: #6c7a81;
-	text-align: center;
 }
 
 
@@ -443,7 +442,7 @@ p{
 		font-weight: 500;
 		font-size: 20px;
 		padding: 8px;
-		line-height: 30px;
+		line-height: 1.5;
 		border: 3px solid white;
 		border-radius: 35px;
 		margin: 5px;
@@ -459,13 +458,16 @@ p{
 /* MOBILIZATION PAGE */
 .MobilizationContainer{
 	background-color: #95B4C0;
-	margin: 30px;
+	margin: 30px 100px;
 	border: 3px solid #16657c;
 
 }
 	.MobBody{
-		line-height: 2;
-		margin: 30px;
+		line-height: 1.5;
+		margin: 30px 30px;
+	}
+	.subheader-mob{
+		margin: 20px 30px;
 	}
 	/* Mobilization QUICK LINKS SECTION*/
 	.QuickLinks-Mob{
@@ -475,8 +477,7 @@ p{
 		display: flex;
 		justify-content: center;
 		flex-flow: row wrap;
-		max-width: 1200px;
-		max-height: 500px;
+		max-width: 750px;
 		padding: 5px;
 		margin:  30px auto;
 		position: static;
@@ -488,11 +489,11 @@ p{
 		font-weight: 500;
 		font-size: 20px;
 		padding: 8px;
-		line-height: 30px;
 		border: 3px solid white;
 		border-radius: 35px;
 		margin: 5px;
 		text-align: center;
+		line-height: 1.5;
 	}
 	.QuickLinks-Mob a:hover {
 		color: black;
@@ -535,14 +536,59 @@ p{
 	background-color: white;
 }
 
-/* WHEN BROWSER WIDTH IS 800PX OR LESS */
-@media screen and (max-width: 900px) {
+
+/* WHEN BROWSER WIDTH IS 900PX OR LESS */
+@media screen and (max-width: 1200px) {
+	.QuickLinks {
+		background-color: #95B4C0;
+		border: 3px solid #16657c;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 500px;
+		max-height: 500px;
+		padding: 5px;
+		margin: 30px auto;
+		position: static;
+	}
+}
+
+/* WHEN BROWSER WIDTH IS 1000PX OR LESS */
+@media screen and (max-width: 1000px) {
 	.wrapper-home ul li a {						/*NAVNAR INDIVIDUAL TABS*/
 		text-decoration: none;
 		color: #16657c;
 		font-weight: 600;
 		font-size: 15px;
 		padding: 5px;
+	}
+
+	.QuickLinks{
+		background-color: #95B4C0;
+		border: 3px solid #16657c;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 500px;
+		max-height: 500px;
+		padding: 5px;
+		margin:  30px auto;
+		position: static;
+	}
+	/* Mobilization QUICK LINKS SECTION*/
+	.QuickLinks-Mob{
+		background-color: #95B4C0;
+		border: 3px solid #16657c;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 600px;
+		padding: 5px;
+		margin:  30px auto;
+		position: static;
 	}
 }
 /* WHEN BROWSER WIDTH IS 800PX OR LESS */
@@ -568,7 +614,7 @@ p{
 		max-width: 400px;
 		opacity: 1.0;
 		border: 3px solid #16657c;
-		margin: auto;
+		margin: 30px auto;
 	}
 	.info{
 		max-width: 400px;
@@ -626,7 +672,10 @@ p{
 		transition: 0.125s;
 	}
 
-	a {
+	.menu ul li a{
+		text-decoration: none;
+	}
+	.menu a {
 		color: white;
 		font-size: 20px;
 		text-decoration: none;
@@ -658,13 +707,24 @@ p{
 		align-items: center;
 		margin-top: 180px;
 	}
-
-	/* Footer */
-	.footer {
-		height: 30px;
-		width: 100%;
+	/* Mobilization QUICK LINKS SECTION*/
+	.QuickLinks-Mob{
 		background-color: #95B4C0;
-		border-top: 2px solid #cccccc;
-		position: relative;
+		border: 3px solid #16657c;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 300px;
+		padding: 5px;
+		margin:  30px auto;
+		position: static;
+	}
+	/* MOBILIZATION PAGE */
+	.MobilizationContainer{
+		background-color: #95B4C0;
+		margin: 30px 30px;
+		border: 3px solid #16657c;
+
 	}
 }
