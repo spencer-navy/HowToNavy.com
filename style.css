@@ -1,0 +1,744 @@
+/*MY CODE*/
+
+/* star(*) applies to everything in the webpage*/
+
+* {
+	margin: 0;
+}
+body {
+	height: 100%;
+	width: 100%;
+	background-image: url("LOGO-D.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+/* NAVBAR */
+.wrapper-total{								/*NAVBAR AS A WHOLE*/
+	background-color: #95B4C0;
+	border-bottom: 3px solid #1A4770;
+	width: 100%;
+	height: 60px;
+	position: static;
+}
+
+.wrapper-home{								/*NAVBAR IN LARGE VIEW*/
+	background-color: #95B4C0;
+	border-bottom: 3px solid #1A4770;
+	width: 100%;
+	height: 60px;
+	position: static;
+}
+.wrapper-home ul {							/*NAVBAR LIST OF ITEMS*/
+	display: flex;
+	justify-content: right;
+	margin-right: 10px;
+}
+.wrapper-home ul li {						/*NAVBAR TABS AS A WHOLE*/
+	padding: 0px;
+	margin-top: 20px;
+	position: relative;
+	list-style: none;
+}
+.wrapper-home ul li a {						/*NAVNAR INDIVIDUAL TABS*/
+	text-decoration: none;
+	color: #1A4770;
+	font-weight: 600;
+	font-size: 25px;
+	padding: 10px;
+}
+.wrapper-home ul li a:hover {				/*NAVNAR INDIVIDUAL TABS WHEN HOVER*/
+	color: white;
+}
+.wrapper-home ul li ul {					/*NAVBAR DROP DOWN AS A WHOLE*/
+	display: none;
+	position: absolute;
+	background-color: #95B4C0;
+	border-radius: 0px 0px 10px 10px;
+	border-left: 3px solid #1A4770;
+	border-bottom: 3px solid #1A4770;
+	border-right: 3px solid #1A4770;
+}
+.wrapper-home ul li:hover ul{				/*NAVBAR DROPDOWN WHEN HOVER*/
+	display: block;
+}
+.wrapper-home ul li ul li {
+	width: 180px;
+}
+.wrapper-home ul li ul li a {				/*NAVBAR DROPDOWN INDIVIDUAL TABS*/
+	text-decoration: none;
+	color: #1A4770;
+	font-size: 20px;
+	padding: 8px 14px;
+}
+.wrapper-home ul li ul li a:hover{			/*NAVBAR DROPDOWN INDIV TABS WHEN HOVER*/
+	color: white;
+}
+.wrapper-home ul li:first-child{ 			/*navbar logo justify left */
+	justify-content: left;
+	margin-right: auto;
+}
+
+.logo{										/*LOGO WHEN CREATED*/
+	width: 60px;
+	height: 60px;
+	margin-top: 0px;
+}
+.menu{										/*LIST OF NAVBAR TABS WHEN SMALL*/
+	display: none;
+}
+
+
+/*Company Tagline*/
+.tagline{
+	background-color: #95B4C0;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	max-width: 70%;
+	padding: 10px;
+	margin: 50px auto;
+	color: black;
+	position: static;
+}
+.tagline h1{
+	font-size: 45px;
+}
+
+
+/* HOME PAGE QUICK LINKS SECTION*/
+.QuickLinks{
+	background-color: #95B4C0;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	max-width: 70%;
+	padding: 5px;
+	margin: 50px auto;
+	position: static;
+}
+.QuickLinks a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	font-size: 25px;
+	padding: 10px;
+	line-height: 1.5;
+	border: 3px solid white;
+	border-radius: 35px;
+	margin: 5px;
+}
+.QuickLinks a:hover {
+	color: black;
+	background-color: white;
+}
+
+
+
+/*What We Do Block*/
+.info{
+	background-color: #95B4C0;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	text-align: center;
+	display: block;
+	justify-content: center;
+	padding: 10px;
+	margin: 50px auto;
+	max-width: 70%;
+	position: static;
+}
+.info-title{
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 30px;
+	position: static;
+}
+.info p{
+	color: black;
+	font-size: 30px;
+}
+
+/* 		````````MOST COMMON LINKS ON HOME PAGE````````````			*/
+#Most-Common-Container{
+	background-color: #DDF2F9;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	max-width: 70%;
+	padding: 10px;
+	margin: 50px auto;
+}
+.most-common-section{
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+	padding: 5px;
+	border: 3px solid #1A4770;
+	background-color: #95B4C0;
+	box-sizing: border-box;
+	width: 400px;
+	max-height: 800px;
+}
+.most-common-section a{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 15px;
+	padding: 10px;
+	border: 3px solid white;
+	border-radius: 15px;
+	margin: 5px auto;
+	line-height: 20px;
+}
+.most-common-section a:hover{
+	color: black;
+	background-color: white;
+}
+
+.subheader-most-common{
+	color: 16657c;
+	font-size: 30px;
+	margin-bottom: 10px;
+	position: static;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Links Home page */
+.Links{
+	background-color: #95B4C0;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	text-align: center;
+	display: block;
+	justify-content: center;
+	width: 400px;
+	max-height: 200px;
+	padding: 10px;
+	margin: 20px auto;
+	position: static;
+}
+.Links-Title{
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 30px;
+	position: static;
+}
+
+
+
+
+
+
+
+/*ABOUT PAGE*/
+/* Home Page Splash*/
+.distant {
+	width: 100%;
+	margin-top: 0;
+	max-height: 900px;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.distant-text{
+	position: absolute;
+	color: #1A4770;
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+	width: 100%;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	margin-top: 180px;
+}
+.distant2{
+	width: 100%;
+	max-height: 900px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.about{
+	background-color: #95B4C0;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	max-width: 400px;
+	max-height: 50px;
+	padding: 10px;
+	margin: 20px auto;
+	color: black;
+}
+.about-body{
+	box-sizing: border-box;
+	background-color: #95B4C0;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	text-align: center;
+	display: block;
+	justify-content: center;
+	max-width: 400px;
+	max-height: 800px;
+	padding: 10px;
+	margin: 20px auto 20px auto;
+}
+
+.about-p{
+	color: black;
+	font-size: 20px;
+}
+
+
+
+
+/* CONTACT US PAGE */
+.contact-title{
+	background-color: #95B4C0;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	max-width: 400px;
+	padding: 10px;
+	margin: 20px auto 20px auto;
+	color: black;
+}
+.contact-body{
+	background-color: #95B4C0;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	text-align: center;
+	display: block;
+	justify-content: center;
+	max-width: 700px;
+	padding: 20px;
+	margin: 20px auto 20px auto;
+	color: #1A4770;
+}
+.contact-h2{
+	margin: 20px auto 20px auto;
+}
+.contact-p a{
+	text-decoration: none;
+	color: black;
+	border: 3px solid white;
+	border-radius: 35%;
+	padding: 8px;
+	font-size: 20px;
+	margin: 10px;
+}
+.contact-p a:hover{
+	background-color: white;
+	color: black;
+}
+
+
+
+
+
+/* LINKS PAGE MAIN CONTENT */
+#Full-Links{
+	background-color: #DDF2F9;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	max-width: 90%;
+	max-height: 100%;
+	padding: 10px;
+	margin: 30px auto;
+}
+.links-section{
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+	padding: 5px;
+	border: 3px solid #1A4770;
+	background-color: #95B4C0;
+	box-sizing: border-box;
+	width: 400px;
+	max-height: 800px;
+}
+.links-section a{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 15px;
+	padding: 10px;
+	border: 3px solid white;
+	border-radius: 15px;
+	margin: 5px auto;
+	line-height: 20px;
+}
+.links-section a:hover{
+	color: black;
+	background-color: white;
+}
+.links-title{
+	color: 16657c;
+	font-size: 30px;
+	margin-bottom: 10px;
+	position: static;
+}
+
+
+
+
+
+
+/* EDUCATION AND COLLEGE RESOURCES PAGE */
+	.EducationContainer{
+		background-color: #95B4C0;
+		margin: 30px;
+		border: 3px solid #1A4770;
+	}
+	/* EDUCATION QUICK LINKS SECTION*/
+	.QuickLinks-Education{
+		background-color: #95B4C0;
+		border: 3px solid #1A4770;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 1200px;
+		max-height: 500px;
+		padding: 5px;
+		margin:  30px auto;
+		position: static;
+	}
+
+	.QuickLinks-Education a {
+		text-decoration: none;
+		color: black;
+		font-weight: 500;
+		font-size: 20px;
+		padding: 8px;
+		line-height: 1.5;
+		border: 3px solid white;
+		border-radius: 35px;
+		margin: 5px;
+		text-align: center;
+	}
+	.QuickLinks-Education a:hover {
+		color: black;
+		background-color: white;
+	}
+
+
+
+/* MOBILIZATION PAGE */
+.MobilizationContainer{
+	background-color: #95B4C0;
+	margin: 30px 100px;
+	border: 3px solid #1A4770;
+
+}
+	.MobBody{
+		line-height: 1.5;
+		margin: 30px 30px;
+	}
+	.subheader-mob{
+		margin: 20px 30px;
+	}
+	/* Mobilization QUICK LINKS SECTION*/
+	.QuickLinks-Mob{
+		background-color: #95B4C0;
+		border: 3px solid #1A4770;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 750px;
+		padding: 5px;
+		margin:  30px auto;
+		position: static;
+	}
+
+	.QuickLinks-Mob a {
+		text-decoration: none;
+		color: black;
+		font-weight: 500;
+		font-size: 20px;
+		padding: 8px;
+		border: 3px solid white;
+		border-radius: 35px;
+		margin: 5px;
+		text-align: center;
+		line-height: 1.5;
+	}
+	.QuickLinks-Mob a:hover {
+		color: black;
+		background-color: white;
+	}
+
+
+
+
+/* FORMS PAGE */
+/* Mobilization QUICK LINKS SECTION*/
+.QuickLinks-Forms{
+	background-color: #95B4C0;
+	border: 3px solid #1A4770;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	max-width: 700px;
+	max-height: 500px;
+	padding: 5px;
+	margin:  30px auto;
+	position: static;
+}
+
+.QuickLinks-Forms a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	font-size: 30px;
+	padding: 8px;
+	line-height: 30px;
+	border: 3px solid white;
+	border-radius: 35px;
+	margin: 5px;
+	text-align: center;
+}
+.QuickLinks-Forms a:hover {
+	color: black;
+	background-color: white;
+}
+
+
+/* WHEN BROWSER WIDTH IS 900PX OR LESS */
+@media screen and (max-width: 1200px) {
+	.QuickLinks {
+		background-color: #95B4C0;
+		border: 3px solid #1A4770;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 70%;
+		padding: 5px;
+		margin: 30px auto;
+		position: static;
+	}
+}
+
+/* WHEN BROWSER WIDTH IS 1000PX OR LESS */
+@media screen and (max-width: 1000px) {
+	.wrapper-home ul li a {						/*NAVNAR INDIVIDUAL TABS*/
+		text-decoration: none;
+		color: #1A4770;
+		font-weight: 600;
+		font-size: 15px;
+		padding: 5px;
+	}
+	.QuickLinks{
+		background-color: #95B4C0;
+		border: 3px solid #1A4770;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 70%;
+		max-height: 500px;
+		padding: 5px;
+		margin:  30px auto;
+		position: static;
+	}
+	/* Mobilization QUICK LINKS SECTION*/
+	.QuickLinks-Mob{
+		background-color: #95B4C0;
+		border: 3px solid #1A4770;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 600px;
+		padding: 5px;
+		margin:  30px auto;
+		position: static;
+	}
+}
+/* WHEN BROWSER WIDTH IS 800PX OR LESS */
+@media screen and (max-width: 800px) {
+	/*Company Tagline*/
+	.tagline{
+		background-color: #95B4C0;
+		border: 3px solid #1A4770;
+		box-sizing: border-box;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		max-width: 400px;
+		padding: 10px;
+		margin: 50px auto;
+		color: black;
+		position: static;
+	}
+	.tagline h1{
+		font-size: 40px;
+	}
+	body {
+		height: 100%;
+		background-color: white;
+		background-image: none;
+	}
+	.distant{
+		display: none;
+	}
+	.tagline{
+		position: static;
+		opacity: 1.0;
+		border: 3px solid #1A4770;
+	}
+	.QuickLinks{
+		position: static;
+		max-width: 400px;
+		opacity: 1.0;
+		border: 3px solid #1A4770;
+		margin: 50px auto;
+	}
+	.info{
+		max-width: 400px;
+		opacity: 1.0;
+		border: 3px solid #1A4770;
+		margin: 30px auto;
+	}
+	.wrapper-home {
+		display: none;
+	}
+
+	.logo{
+		padding: 10px;
+		text-decoration: none;
+		color: #1A4770;
+		font-weight: 600;
+		font-size: 30px;
+		display: flex;
+		justify-content: left;
+		margin-right: auto;
+		width: 10%;
+	}
+
+	.menuIcon {
+		height: 60px;
+		width: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		position: absolute;
+		right: 0;
+		cursor: pointer;
+	}
+
+	.bar {
+		width: 70%;
+		height: 3px;
+		background-color: white;
+	}
+
+	.menu {
+		position: fixed;
+		top: 60px;
+		right: -160px;
+		width: 150px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: #95B4C0;
+		border-left: 3px solid #1A4770;
+		border-bottom: 3px solid #1A4770;
+		min-height: 150px;
+		transition: 0.125s;
+	}
+
+	.menu ul li a{
+		text-decoration: none;
+	}
+	.menu a {
+		color: white;
+		font-size: 20px;
+		text-decoration: none;
+		padding: 5px;
+		font-weight: 400;
+	}
+	a:hover{
+		color: black;
+	}
+
+	.distant2{
+		width: 100%;
+		height: 500px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.distant-text{
+		position: absolute;
+		color: #1A4770;
+		font-size: 40px;
+		font-weight: 700;
+		text-align: center;
+		width: 100%;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		margin-top: 180px;
+	}
+	/* Mobilization QUICK LINKS SECTION*/
+	.QuickLinks-Mob{
+		background-color: #95B4C0;
+		border: 3px solid #1A4770;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		max-width: 300px;
+		padding: 5px;
+		margin:  30px auto;
+		position: static;
+	}
+	/* MOBILIZATION PAGE */
+	.MobilizationContainer{
+		background-color: #95B4C0;
+		margin: 30px 30px;
+		border: 3px solid #1A4770;
+
+	}
+}
