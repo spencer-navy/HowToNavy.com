@@ -372,10 +372,10 @@ body {
 	flex-flow: row wrap;
 	justify-content: space-evenly;
 	align-items: stretch;
-	max-width: 90%;
+	max-width: 80%;
 	max-height: 100%;
 	padding: 10px;
-	margin: 30px auto;
+	margin: 50px auto;
 }
 .links-section{
 	display: flex;
