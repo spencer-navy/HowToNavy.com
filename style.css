@@ -601,7 +601,7 @@ body {
 		justify-content: center;
 		max-width: 400px;
 		padding: 10px;
-		margin: 50px auto;
+		margin: 30px auto;
 		color: black;
 		position: static;
 	}
@@ -626,7 +626,7 @@ body {
 		max-width: 400px;
 		opacity: 1.0;
 		border: 3px solid #1A4770;
-		margin: 50px auto;
+		margin: 30px auto;
 	}
 	.info{
 		max-width: 400px;
