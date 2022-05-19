@@ -570,7 +570,7 @@ body {
 		justify-content: center;
 		flex-flow: row wrap;
 		max-width: 70%;
-		max-height: 500px;
+		max-height: 600px;
 		padding: 5px;
 		margin:  30px auto;
 		position: static;
